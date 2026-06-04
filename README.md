@@ -4,6 +4,8 @@ An official Python implementation of **Localized Case-Based Feature Importance (
 
 Instead of merely distributing numerical "payouts" like traditional additive frameworks (SHAP, LIME), Localized CBFI shifts the explainable AI paradigm from simple importance attribution to the **recovery of interaction-driven structures**.
 
+![Important chart](images/Fig_02.png)
+
 ---
 
 ##  Key Differences from Additive Approaches (SHAP / LIME)
