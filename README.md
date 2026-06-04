@@ -1,5 +1,7 @@
 # Localized CBFI: Beyond Feature Attribution 
 
+![Ideas](images/Fig_01.png)
+
 An official Python implementation of **Localized Case-Based Feature Importance (CBFI)**, a model-agnostic XAI framework designed to expose the latent interaction structures embedded within complex machine learning models.
 
 Instead of merely distributing numerical "payouts" like traditional additive frameworks (SHAP, LIME), Localized CBFI shifts the explainable AI paradigm from simple importance attribution to the **recovery of interaction-driven structures**.
