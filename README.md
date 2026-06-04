@@ -39,3 +39,4 @@ Extensively benchmarked across **36 distinct model-dataset combinations** (inclu
 
 By aggregating pairwise $G_4$ strength across instances, Localized CBFI explicitly maps out how predictive signals propagate through interconnected feature relationships, uncovering the hidden structural topology of black-box architectures.
 
+![Interaction_Graph](images/Fig_07.png)
