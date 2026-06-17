@@ -55,7 +55,9 @@ networkx >= 3.0
 matplotlib >= 3.10.8
 ```
 
-🚀 Usage InstructionsThe library and experimental code for Localized CBFI are available at https://github.com/dkumango/Local_CBFI/. You can clone the repository and import the module directly:Basic Structural Decomposition TablePythonimport pandas as pd
+## 🚀 Usage Instructions
+
+The library and experimental code for Localized CBFI are available at https://github.com/dkumango/Local_CBFI/. You can clone the repository and import the module directly:Basic Structural Decomposition TablePythonimport pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from local_cbfi_clean_20260410 import get_cbfi_table, generate_all_interactions
 
@@ -83,7 +85,14 @@ interaction_df = generate_all_interactions(
     n_samples=100, 
     job_type='classification'
 )
-🔬 MethodologyLocalized CBFI partitions instance-level feature contributions into distinct, mutually exclusive structural components:Main Effect ($G_1$): The independent drive of a feature, isolated from any variable coupling.Interaction ($G_4$): The pure synergy or regulatory suppression that emerges only through the joint presence of multiple features.$G_4 > 0$: Synergistic Interaction (cooperative feature reinforcement).$G_4 < 0$: Regulatory/Suppressive Interaction (contextual attenuation).Case-Based Sampling StrategyTo solve the combinatorial explosion problem common in game-theoretic approaches, Localized CBFI replaces exhaustive search with a case-based permutation sampling policy. By shuffling target features dynamically against background manifolds instead of using static references, it maintains linear scalability with respect to feature dimensions, achieving sub-second runtimes (<1.0s) per instance.📈 Latent Interaction GraphBy aggregating pairwise $G_4$ strength across instances, Localized CBFI explicitly maps out how predictive signals propagate through interconnected feature relationships, uncovering the hidden structural topology of black-box architectures.📜 CitationsIf you use this framework, code, or associated datasets in your research, please cite the following foundational work:코드 스니펫@article{oh2022predictive,
+## 🔬 Methodology
+
+Localized CBFI partitions instance-level feature contributions into distinct, mutually exclusive structural components:Main Effect ($G_1$): The independent drive of a feature, isolated from any variable coupling.Interaction ($G_4$): The pure synergy or regulatory suppression that emerges only through the joint presence of multiple features.$G_4 > 0$: Synergistic Interaction (cooperative feature reinforcement).$G_4 < 0$: Regulatory/Suppressive Interaction (contextual attenuation).Case-Based Sampling StrategyTo solve the combinatorial explosion problem common in game-theoretic approaches, Localized CBFI replaces exhaustive search with a case-based permutation sampling policy. By shuffling target features dynamically against background manifolds instead of using static references, it maintains linear scalability with respect to feature dimensions, achieving sub-second runtimes (<1.0s) per instance.📈 Latent Interaction GraphBy aggregating pairwise $G_4$ strength across instances, Localized CBFI explicitly maps out how predictive signals propagate through interconnected feature relationships, uncovering the hidden structural topology of black-box architectures.
+
+## 📜 Citations
+
+If you use this framework, code, or associated datasets in your research, please cite the following foundational work:코드 스니펫@article{oh2022predictive,
+
   title={Predictive case-based feature importance and interaction},
   author={Oh, Sejong},
   journal={Information Sciences},
