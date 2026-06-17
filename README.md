@@ -22,18 +22,18 @@ This framework structurally isolates independent **Main Effects ($G_1$)** from p
 
 The experimental pipeline integrates public datasets characterized by distinct domain attributes and complex nonlinear relationships:
 
-1. **Wine Quality Dataset**: Consists of red wine samples with 11 chemical properties (acidity, residual sugar, alcohol, etc.). Ideal for analyzing regulatory mechanisms ($G_4$) where final grades are determined by the delicate balance and interdependence between multiple components.
-2. **Medical Insurance Dataset**: Predicts annual medical charges based on individual attributes (age, BMI, smoking status). Features a strong nonlinear dependency structure where the combination of specific risk factors creates exponential synergies.
+1. **Wine Quality Dataset (Cortez et al., 2009)**: Consists of red wine samples with 11 chemical properties (acidity, residual sugar, alcohol, etc.). It is ideal for analyzing regulatory mechanisms ($G_4$) where final grades are determined by the delicate balance and interdependence between multiple components rather than single independent marginal variables.
+2. **Medical Insurance Dataset (Lantz, 2013)**: Predicts annual medical charges based on individual attributes (age, BMI, smoking status). It features a strong nonlinear dependency structure where the combination of specific risk factors creates exponential synergies.
 3. **Multi-domain Benchmarks**: Extensively validated across various high-stakes domains including finance, healthcare, and real estate (e.g., Ames Housing, Adult, Bike Sharing, and Diabetes datasets).
 
 ---
 
 ## 💻 Code Information
 
-The implementation resides in `local_cbfi_clean_20260410.py` and provides a comprehensive backend pipeline along with advanced visualization suites:
+The core backend pipeline resides in `local_cbfi_clean_20260410.py` and provides a comprehensive explanation engine along with advanced visualization suites:
 
 * **Core Explanation Engines**: 
-  * `explain_local_cbfi_classification_conditional()`: Decomposes classification predictions into structural groups using conditional permutation sampling.
+  * `explain_local_cbfi_classification_conditional()`: Decomposes instance-level classification predictions into structural groups using conditional permutation sampling.
   * `explain_local_cbfi_regression_conditional()`: Restores regression error-reduction trajectories by reflecting the structural decision tree logic.
 * **Neighborhood Estimators**: 
   * `_get_conditional_samples()`: Extracts a localized neighborhood sample pool based on feature correlations and KNN to preserve the learned data manifold.
