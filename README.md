@@ -108,7 +108,7 @@ Localized CBFI partitions instance-level feature contributions into distinct, mu
   The pure synergy or regulatory suppression that emerges only through the joint presence of multiple features.
   
   - $G_4 > 0$: Synergistic Interaction (cooperative feature reinforcement).
-  - 
+   
   - $G_4 < 0$: Regulatory/Suppressive Interaction (contextual attenuation).
 
 **Case-Based Sampling Strategy**
