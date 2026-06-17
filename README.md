@@ -58,18 +58,23 @@ matplotlib >= 3.10.8
 
 ## 🚀 Usage Instructions
 
-The library and experimental code for Localized CBFI are available at https://github.com/dkumango/Local_CBFI/. You can clone the repository and import the module directly:Basic Structural Decomposition TablePythonimport pandas as pd
+The library and experimental code for Localized CBFI are available at https://github.com/dkumango/Local_CBFI/. You can clone the repository and import the module directly:
+
+**Basic Structural Decomposition Table**
+
+```python
+import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from local_cbfi_clean_20260410 import get_cbfi_table, generate_all_interactions
 
-1. Prepare your data and model
+# 1. Prepare your data and model
 X_train, y_train, background_data = ...
 model = RandomForestClassifier(random_state=42).fit(X_train, y_train)
 
-2. Select a target instance to explain
+# 2. Select a target instance to explain
 instance = background_data.iloc[0]
 
-3. Generate Localized CBFI structural diagnostic table
+# 3. Generate Localized CBFI structural diagnostic table
 cbfi_table = get_cbfi_table(
     model=model, 
     instance=instance, 
@@ -77,8 +82,13 @@ cbfi_table = get_cbfi_table(
     n_samples=100, 
     job_type='classification'
 )
-print(cbfi_table)
-Mapping Pairwise Structural GraphsPython# Generate interaction data for network graphs
+print(cbfi_table)'
+```
+
+**Mapping Pairwise Structural Graphs**
+
+```python
+# Generate interaction data for network graphs
 interaction_df = generate_all_interactions(
     model=model, 
     instance=instance, 
@@ -86,7 +96,7 @@ interaction_df = generate_all_interactions(
     n_samples=100, 
     job_type='classification'
 )
-
+```
 ---
 ## 🔬 Methodology
 
@@ -95,23 +105,7 @@ Localized CBFI partitions instance-level feature contributions into distinct, mu
 ---
 ## 📜 Citations
 
-If you use this framework, code, or associated datasets in your research, please cite the following foundational work:코드 스니펫@article{oh2022predictive,
-
-  title={Predictive case-based feature importance and interaction},
-  author={Oh, Sejong},
-  journal={Information Sciences},
-  volume={593},
-  pages={155--176},
-  year={2022},
-  publisher={Elsevier}
-}
-
-@article{oh2026beyond,
-  title={Beyond Feature Attribution: Recovering Latent Interaction Structures in Machine Learning Models via Localized CBFI},
-  author={Oh, Sejong},
-  journal={PeerJ Computer Science},
-  year={2026}
-}
+This work is currently under peer review for publication. Complete citation information and official DOI references for this paper will be provided here immediately upon acceptance and publication.
 
 ---
 ## 📄 License & Contribution 
