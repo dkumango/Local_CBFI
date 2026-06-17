@@ -53,6 +53,7 @@ pandas >= 2.0.0
 scikit-learn >= 1.8.0
 networkx >= 3.0
 matplotlib >= 3.10.8
+```
 
 🚀 Usage InstructionsThe library and experimental code for Localized CBFI are available at https://github.com/dkumango/Local_CBFI/. You can clone the repository and import the module directly:Basic Structural Decomposition TablePythonimport pandas as pd
 from sklearn.ensemble import RandomForestClassifier
