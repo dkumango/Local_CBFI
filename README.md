@@ -1,46 +1,55 @@
-# Localized CBFI: Beyond Feature Attribution 
+# Beyond Feature Attribution: Recovering Latent Interaction Structures via Localized CBFI
 
-![Ideas](images/Fig_01.png)
+![Framework](images/Fig_01.png)
 
-An official Python implementation of **Localized Case-Based Feature Importance (CBFI)**, a model-agnostic XAI framework designed to expose the latent interaction structures embedded within complex machine learning models.
+An official Python implementation of **Localized Case-Based Feature Importance (CBFI)**, a model-agnostic explainable AI (XAI) framework designed to expose the latent interaction structures embedded within complex machine learning models. 
 
 Instead of merely distributing numerical "payouts" like traditional additive frameworks (SHAP, LIME), Localized CBFI shifts the explainable AI paradigm from simple importance attribution to the **recovery of interaction-driven structures**.
+
+---
+
+## 📝 Description
+
+Localized CBFI overcomes the structural limitations of existing additive explanation models by explicitly decomposing feature interactions at the individual instance level. Traditional methods often absorb complex, non-linear interactions into single feature scores, smoothing over the structural logic that governs the model's decision manifold. 
+
+This framework structurally isolates independent **Main Effects ($G_1$)** from pure, context-dependent **Synergistic Interactions ($G_4$)** at the individual instance level. It provides objective, high-resolution diagnostic maps of a model's internal decision mechanisms, making it vital for high-stakes domains where understanding the internal logic is as essential as predictive accuracy.
 
 ![Important chart](images/Fig_02.png)
 
 ---
 
-##  Key Differences from Additive Approaches (SHAP / LIME)
+## 📊 Dataset Information
 
-* **The Additive Fallacy:** Traditional methods often absorb complex, non-linear interactions into single feature scores, smoothing over the structural logic that governs the model's decision manifold.
-* **Taxonomic Separation:** Localized CBFI structurally isolates independent **Main Effects ($G_1$)** from pure, context-dependent **Synergistic Interactions ($G_4$)** at the individual instance level.
-* **High-Resolution SNR:** Achieves up to **1,952.7x higher sensitivity** in isolating pure interactions compared to baseline metrics, eliminating numerical noise.
-* **Meaning-Based Interpretation:** Outputs are presented in non-normalized, absolute scales (e.g., direct probability shifts or real-world currency units `$`) for intuitive high-stakes auditing.
+The experimental pipeline integrates public datasets characterized by distinct domain attributes and complex nonlinear relationships:
 
----
-
-##  Internal Mechanism
-
-Localized CBFI partitions instance-level feature contributions into distinct, mutually exclusive structural components:
-
-* **Main Effect ($G_1$):** The independent drive of a feature, isolated from any variable coupling.
-* **Interaction ($G_4$):** The pure synergy or regulatory suppression that emerges only through the joint presence of multiple features. 
-  * $G_4 > 0$: Synergistic Interaction (cooperative feature reinforcement).
-  * $G_4 < 0$: Regulatory/Suppressive Interaction (contextual attenuation).
+1. **Wine Quality Dataset**: Consists of red wine samples with 11 chemical properties (acidity, residual sugar, alcohol, etc.). Ideal for analyzing regulatory mechanisms ($G_4$) where final grades are determined by the delicate balance and interdependence between multiple components.
+2. **Medical Insurance Dataset**: Predicts annual medical charges based on individual attributes (age, BMI, smoking status). Features a strong nonlinear dependency structure where the combination of specific risk factors creates exponential synergies.
+3. **Multi-domain Benchmarks**: Extensively validated across various high-stakes domains including finance, healthcare, and real estate (e.g., Ames Housing, Adult, Bike Sharing, and Diabetes datasets).
 
 ---
 
-##  Evaluation & Performance
+## 💻 Code Information
 
-Extensively benchmarked across **36 distinct model-dataset combinations** (including Random Forest, XGBoost, CatBoost, and TabNet) spanning high-stakes domains like healthcare, finance, and real-estate.
+The implementation resides in `local_cbfi_clean_20260410.py` and provides a comprehensive backend pipeline along with advanced visualization suites:
 
-* **Fidelity & Binding Requirements:** Fidelity tests confirm that Localized CBFI correctly identifies the "binding requirements" of features—proving that decision structures often break down only when the entire interaction network is neutralized, rather than single marginal variables.
-* **Computational Efficiency:** Leverages a case-based sampling strategy that maintains **linear scalability** with respect to the number of features. Achieves **sub-second runtimes (<1.0s)** per instance, making it highly feasible for real-time database system integration.
+* **Core Explanation Engines**: 
+  * `explain_local_cbfi_classification_conditional()`: Decomposes classification predictions into structural groups using conditional permutation sampling.
+  * `explain_local_cbfi_regression_conditional()`: Restores regression error-reduction trajectories by reflecting the structural decision tree logic.
+* **Neighborhood Estimators**: 
+  * `_get_conditional_samples()`: Extracts a localized neighborhood sample pool based on feature correlations and KNN to preserve the learned data manifold.
+* **Interaction Mapping**: 
+  * `get_local_pairwise_interaction()` & `generate_all_interactions()`: Evaluate structural interaction topologies across unique feature pairs.
+* **Visualization Tools**: Includes high-resolution plotting wrappers for bar attribution summaries (`visualize_feature_contribution`), 1:1 local dependencies (`visualize_local_pairwise_interaction`), and network structures (`visualize_feature_interaction_graph`, `visualize_draggable_interaction_graph`).
 
 ---
 
-##  Latent Interaction Graph
+## ⚙️ Requirements
 
-By aggregating pairwise $G_4$ strength across instances, Localized CBFI explicitly maps out how predictive signals propagate through interconnected feature relationships, uncovering the hidden structural topology of black-box architectures.
+The entire framework and experimental pipelines are implemented using Python (v3.14+). Ensure the following dependencies are installed:
 
-![Interaction_Graph](images/Fig_07.png)
+```bash
+numpy >= 2.4.3
+pandas >= 2.0.0
+scikit-learn >= 1.8.0
+networkx >= 3.0
+matplotlib >= 3.10.8
