@@ -1,0 +1,10 @@
+method,DGP,RF,XGB,ANN
+CBFI,0.89,0.86,0.88,0.86
+TreeSHAP-IQ (+partner),,0.94,0.94,
+TreeSHAP-IQ (rest-half),,0.78,0.77,
+TreeSHAP-IQ (rest-sign),,0.8,0.81,
+TreeSHAP-IQ (sign),,0.5,0.5,
+kSII (+partner),0.96,0.94,0.94,0.91
+kSII (rest-half),0.88,0.84,0.86,0.86
+kSII (rest-sign),0.92,0.88,0.91,0.89
+kSII (sign),0.5,0.5,0.5,0.49

@@ -1,0 +1,10 @@
+method,amplified,gated,redundant,reversed,standalone
+CBFI,0.98,0.76,0.74,1.0,0.97
+TreeSHAP-IQ (+partner),1.0,0.76,0.99,1.0,1.0
+TreeSHAP-IQ (rest-half),1.0,0.81,0.58,0.4,1.0
+TreeSHAP-IQ (rest-sign),1.0,0.78,0.73,0.4,1.0
+TreeSHAP-IQ (sign),1.0,0.0,0.0,1.0,1.0
+kSII (+partner),0.99,0.75,0.99,1.0,1.0
+kSII (rest-half),0.98,0.76,0.7,1.0,0.95
+kSII (rest-sign),0.98,0.73,0.89,1.0,0.95
+kSII (sign),0.99,0.0,0.0,1.0,1.0

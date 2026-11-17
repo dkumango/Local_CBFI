@@ -1,0 +1,11 @@
+subset,n,inputs,accuracy,balanced_acc
+all labels,812,TreeSHAP (phi_i),0.372,0.211
+all labels,812,"TreeSHAP (phi_i, main, int)",0.764,0.562
+all labels,812,"TreeSHAP (phi_i, main, int, rest)",0.777,0.615
+all labels,812,"CBFI means (A, B, C)",0.853,0.707
+all labels,812,majority class,0.47,0.2
+redundant vs gated,170,TreeSHAP (phi_i),0.594,0.594
+redundant vs gated,170,"TreeSHAP (phi_i, main, int)",0.659,0.659
+redundant vs gated,170,"TreeSHAP (phi_i, main, int, rest)",0.965,0.965
+redundant vs gated,170,"CBFI means (A, B, C)",0.971,0.971
+redundant vs gated,170,majority class,0.506,0.5

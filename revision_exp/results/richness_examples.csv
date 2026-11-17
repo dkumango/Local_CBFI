@@ -1,0 +1,349 @@
+dataset,pair,phi,labels,G1,G4,C,absphi_n
+wine,alcohol@29 / alcohol@46,0.17 / 0.175,standalone / amplified,0.144 / 0.123,0.00822 / 0.0775,0.123 / 0.192,1.953234672292862
+wine,alcohol@29 / alcohol@45,0.17 / 0.174,standalone / amplified,0.144 / 0.0944,0.00822 / 0.112,0.123 / 0.22,1.953234672292862
+wine,alcohol@42 / alcohol@46,0.167 / 0.175,standalone / amplified,0.158 / 0.123,-0.0114 / 0.0775,-0.0606 / 0.192,1.918832011096485
+wine,alcohol@42 / alcohol@45,0.167 / 0.174,standalone / amplified,0.158 / 0.0944,-0.0114 / 0.112,-0.0606 / 0.22,1.918832011096485
+wine,alcohol@24 / alcohol@35,0.137 / 0.139,amplified / standalone,0.0775 / 0.12,0.106 / -1.67e-05,0.0283 / -0.0223,1.5714114584518641
+wine,alcohol@8 / alcohol@35,0.136 / 0.139,amplified / standalone,0.0805 / 0.12,0.0925 / -1.67e-05,0.175 / -0.0223,1.5647738435449454
+wine,alcohol@5 / alcohol@35,0.134 / 0.139,amplified / standalone,0.0882 / 0.12,0.0781 / -1.67e-05,-0.0486 / -0.0223,1.5327566200115108
+wine,residual sugar@6 / alcohol@37,-0.132 / -0.127,amplified / standalone,-0.0488 / -0.119,-0.192 / 0.01,0.3 / 0.0752,1.5101873099372152
+wine,alcohol@54 / sulphates@57,0.13 / 0.126,amplified / standalone,0.0963 / 0.123,0.0775 / 0.00525,0.0885 / 0.0117,1.4872997435754078
+wine,alcohol@18 / sulphates@57,0.129 / 0.126,amplified / standalone,0.114 / 0.123,0.0791 / 0.00525,0.196 / 0.0117,1.473908326860064
+wine,sulphates@57 / alcohol@58,0.126 / 0.128,standalone / amplified,0.123 / 0.101,0.00525 / 0.0957,0.0117 / 0.282,1.4448467118183184
+wine,sulphates@15 / sulphates@57,0.126 / 0.126,amplified / standalone,0.0275 / 0.123,0.19 / 0.00525,0.0547 / 0.0117,1.4424915582765594
+wine,alcohol@28 / sulphates@57,0.122 / 0.126,amplified / standalone,0.096 / 0.123,0.0563 / 0.00525,0.126 / 0.0117,1.4008569755719278
+wine,alcohol@25 / volatile acidity@45,0.114 / 0.117,redundant / amplified,0.135 / 0.0631,-0.0672 / 0.116,0.156 / 0.248,1.3081376261748259
+wine,alcohol@25 / alcohol@30,0.114 / 0.11,redundant / standalone,0.135 / 0.122,-0.0672 / 0.00503,0.156 / 0.212,1.3081376261748259
+wine,alcohol@30 / sulphates@40,0.11 / 0.105,standalone / amplified,0.122 / 0.0764,0.00503 / 0.0662,0.212 / 0.0463,1.2595948733055267
+wine,alcohol@17 / alcohol@50,0.102 / 0.103,standalone / amplified,0.0933 / 0.0687,0.0057 / 0.0683,-0.0389 / 0.13,1.1682078786300913
+wine,alcohol@17 / sulphates@40,0.102 / 0.105,standalone / amplified,0.0933 / 0.0764,0.0057 / 0.0662,-0.0389 / 0.0463,1.1682078786300913
+wine,alcohol@17 / sulphates@51,0.102 / 0.0993,standalone / amplified,0.0933 / 0.0454,0.0057 / 0.0778,-0.0389 / 0.00107,1.1682078786300913
+wine,sulphates@8 / alcohol@17,0.101 / 0.102,amplified / standalone,0.0339 / 0.0933,0.144 / 0.0057,0.17 / -0.0389,1.162869392155644
+wine,sulphates@8 / sulphates@13,0.101 / 0.0985,amplified / redundant,0.0339 / 0.146,0.144 / -0.104,0.17 / 0.181,1.162869392155644
+wine,sulphates@13 / sulphates@51,0.0985 / 0.0993,redundant / amplified,0.146 / 0.0454,-0.104 / 0.0778,0.181 / 0.00107,1.1296607731308597
+wine,sulphates@13 / alcohol@50,0.0985 / 0.103,redundant / amplified,0.146 / 0.0687,-0.104 / 0.0683,0.181 / 0.13,1.1296607731308597
+wine,sulphates@13 / sulphates@36,0.0985 / 0.0966,redundant / amplified,0.146 / 0.0343,-0.104 / 0.147,0.181 / -0.0456,1.1296607731308597
+wine,sulphates@13 / alcohol@17,0.0985 / 0.102,redundant / standalone,0.146 / 0.0933,-0.104 / 0.0057,0.181 / -0.0389,1.1296607731308597
+wine,sulphates@13 / total sulfur dioxide@14,0.0985 / 0.0984,redundant / amplified,0.146 / 0.041,-0.104 / 0.152,0.181 / 0.0587,1.1296607731308597
+wine,total sulfur dioxide@14 / alcohol@17,0.0984 / 0.102,amplified / standalone,0.041 / 0.0933,0.152 / 0.0057,0.0587 / -0.0389,1.1284577622101424
+wine,volatile acidity@8 / alcohol@23,0.0923 / 0.0882,amplified / standalone,0.0434 / 0.0901,0.0732 / -0.00178,0.231 / 0.0644,1.057916565534729
+wine,volatile acidity@11 / alcohol@23,0.0841 / 0.0882,amplified / standalone,0.0338 / 0.0901,0.121 / -0.00178,0.244 / 0.0644,0.9639990461066686
+wine,volatile acidity@11 / alcohol@57,0.0841 / 0.082,amplified / standalone,0.0338 / 0.0613,0.121 / -0.00493,0.244 / 0.0838,0.9639990461066686
+california,AveOccup@20 / MedInc@40,1.04 / 1.05,amplified / gated,0.712 / 1.43,0.451 / -0.793,0.657 / 0.272,0.9561547860532013
+wine,volatile acidity@7 / residual sugar@9,-0.0833 / -0.0798,standalone / amplified,-0.0583 / -0.0576,-0.000733 / -0.102,0.0967 / 0.135,0.9552491878034388
+wine,sulphates@30 / alcohol@57,0.0832 / 0.082,amplified / standalone,0.051 / 0.0613,0.113 / -0.00493,0.175 / 0.0838,0.9534393384865294
+wine,volatile acidity@36 / alcohol@57,0.0826 / 0.082,amplified / standalone,0.0505 / 0.0613,0.103 / -0.00493,-0.0184 / 0.0838,0.9464214076603942
+wine,sulphates@0 / volatile acidity@46,0.0782 / 0.0765,redundant / amplified,0.106 / 0.0372,-0.0975 / 0.0633,0.279 / 0.291,0.8960339668100836
+wine,sulphates@0 / alcohol@14,0.0782 / 0.0781,redundant / standalone,0.106 / 0.0969,-0.0975 / 0.003,0.279 / 0.152,0.8960339668100836
+wine,sulphates@0 / alcohol@57,0.0782 / 0.082,redundant / standalone,0.106 / 0.0613,-0.0975 / -0.00493,0.279 / 0.0838,0.8960339668100836
+wine,sulphates@0 / sulphates@50,0.0782 / 0.0756,redundant / amplified,0.106 / 0.0283,-0.0975 / 0.107,0.279 / 0.131,0.8960339668100836
+wine,alcohol@14 / volatile acidity@46,0.0781 / 0.0765,standalone / amplified,0.0969 / 0.0372,0.003 / 0.0633,0.152 / 0.291,0.8947956695474859
+wine,alcohol@14 / sulphates@50,0.0781 / 0.0756,standalone / amplified,0.0969 / 0.0283,0.003 / 0.107,0.152 / 0.131,0.8947956695474859
+wine,alcohol@11 / alcohol@26,0.0698 / 0.0681,amplified / gated,0.0281 / 0.116,0.0974 / -0.106,0.274 / -0.0459,0.8004289233062178
+wine,alcohol@26 / alcohol@31,0.0681 / 0.0661,gated / amplified,0.116 / 0.0288,-0.106 / 0.107,-0.0459 / -0.00627,0.7806218304732727
+wine,alcohol@26 / sulphates@38,0.0681 / 0.0647,gated / standalone,0.116 / 0.0583,-0.106 / 0.0183,-0.0459 / -0.149,0.7806218304732727
+california,MedInc@0 / MedInc@31,-0.842 / -0.812,amplified / standalone,-0.761 / -0.749,-0.289 / 0.0308,-0.621 / -0.164,0.770549366750789
+wine,alcohol@31 / sulphates@38,0.0661 / 0.0647,amplified / standalone,0.0288 / 0.0583,0.107 / 0.0183,-0.00627 / -0.149,0.757817288019086
+california,MedInc@25 / MedInc@31,-0.824 / -0.812,amplified / standalone,-0.526 / -0.749,-0.232 / 0.0308,-0.741 / -0.164,0.7537812241271642
+wine,volatile acidity@24 / sulphates@38,0.064 / 0.0647,amplified / standalone,0.0227 / 0.0583,0.0573 / 0.0183,0.132 / -0.149,0.7339821942174798
+wine,volatile acidity@23 / alcohol@43,0.063 / 0.0604,amplified / redundant,0.0217 / 0.0989,0.0555 / -0.0981,0.0755 / 0.143,0.7223351742311144
+wine,volatile acidity@23 / sulphates@38,0.063 / 0.0647,amplified / standalone,0.0217 / 0.0583,0.0555 / 0.0183,0.0755 / -0.149,0.7223351742311144
+wine,sulphates@10 / alcohol@43,0.0626 / 0.0604,amplified / redundant,0.0243 / 0.0989,0.0645 / -0.0981,-0.00485 / 0.143,0.7174187364208384
+wine,sulphates@10 / sulphates@38,0.0626 / 0.0647,amplified / standalone,0.0243 / 0.0583,0.0645 / 0.0183,-0.00485 / -0.149,0.7174187364208384
+bike,temp@23 / yr@40,-1.27e+03 / -1.22e+03,redundant / amplified,-1.34e+03 / -1.02e+03,314 / -391,-1.87e+03 / 841,0.6930533563731818
+bike,temp@23 / yr@55,-1.27e+03 / -1.23e+03,redundant / amplified,-1.34e+03 / -975,314 / -457,-1.87e+03 / 1.36e+03,0.6930533563731818
+wine,alcohol@43 / chlorides@56,0.0604 / 0.0597,redundant / amplified,0.0989 / 0.0244,-0.0981 / 0.113,0.143 / 0.13,0.692895830889773
+bike,temp@30 / yr@55,-1.24e+03 / -1.23e+03,redundant / amplified,-1.39e+03 / -975,646 / -457,-867 / 1.36e+03,0.6781003856598493
+bike,temp@30 / yr@46,-1.24e+03 / -1.19e+03,redundant / amplified,-1.39e+03 / -1e+03,646 / -315,-867 / 1.12e+03,0.6781003856598493
+bike,temp@30 / yr@57,-1.24e+03 / -1.18e+03,redundant / amplified,-1.39e+03 / -1.03e+03,646 / -377,-867 / 154,0.6781003856598493
+bike,temp@30 / yr@40,-1.24e+03 / -1.22e+03,redundant / amplified,-1.39e+03 / -1.02e+03,646 / -391,-867 / 841,0.6781003856598493
+bike,temp@30 / yr@31,-1.24e+03 / -1.2e+03,redundant / amplified,-1.39e+03 / -943,646 / -419,-867 / 755,0.6781003856598493
+wine,volatile acidity@3 / chlorides@56,0.0585 / 0.0597,standalone / amplified,0.0451 / 0.0244,0.011 / 0.113,0.0149 / 0.13,0.6710829085632377
+wine,volatile acidity@3 / alcohol@43,0.0585 / 0.0604,standalone / redundant,0.0451 / 0.0989,0.011 / -0.0981,0.0149 / 0.143,0.6710829085632377
+wine,volatile acidity@3 / chlorides@12,0.0585 / 0.0582,standalone / amplified,0.0451 / 0.0178,0.011 / 0.123,0.0149 / 0.123,0.6710829085632377
+bike,yr@40 / temp@51,-1.22e+03 / -1.2e+03,amplified / redundant,-1.02e+03 / -1.29e+03,-391 / 604,841 / -977,0.6677854261837615
+wine,chlorides@12 / volatile acidity@25,0.0582 / 0.0564,amplified / standalone,0.0178 / 0.0478,0.123 / 0.00157,0.123 / 0.174,0.667198242117284
+wine,chlorides@12 / alcohol@43,0.0582 / 0.0604,amplified / redundant,0.0178 / 0.0989,0.123 / -0.0981,0.123 / 0.143,0.667198242117284
+bike,yr@31 / temp@51,-1.2e+03 / -1.2e+03,amplified / redundant,-943 / -1.29e+03,-419 / 604,755 / -977,0.6582173744305342
+bike,temp@51 / yr@57,-1.2e+03 / -1.18e+03,redundant / amplified,-1.29e+03 / -1.03e+03,604 / -377,-977 / 154,0.6580944442857497
+bike,temp@51 / yr@55,-1.2e+03 / -1.23e+03,redundant / amplified,-1.29e+03 / -975,604 / -457,-977 / 1.36e+03,0.6580944442857497
+bike,yr@46 / temp@51,-1.19e+03 / -1.2e+03,amplified / redundant,-1e+03 / -1.29e+03,-315 / 604,1.12e+03 / -977,0.6522198973032783
+bike,yr@18 / temp@30,-1.19e+03 / -1.24e+03,amplified / redundant,-961 / -1.39e+03,-301 / 646,1.73e+03 / -867,0.6489325346572158
+bike,yr@18 / temp@51,-1.19e+03 / -1.2e+03,amplified / redundant,-961 / -1.29e+03,-301 / 604,1.73e+03 / -977,0.6489325346572158
+wine,volatile acidity@25 / alcohol@41,0.0564 / 0.0545,standalone / amplified,0.0478 / 0.00382,0.00157 / 0.173,0.174 / 0.158,0.6465742677710613
+wine,alcohol@41 / sulphates@52,0.0545 / 0.0537,amplified / standalone,0.00382 / 0.0606,0.173 / 0.00212,0.158 / 0.274,0.6242144928230308
+insurance,bmi@13 / age@45,7.12e+03 / 6.85e+03,amplified / standalone,3.23e+03 / 7.21e+03,6.55e+03 / -371,2.27e+04 / -5.99e+03,0.6181101653310354
+wine,sulphates@24 / chlorides@38,-0.0532 / -0.0514,gated / standalone,-0.0689 / -0.0537,0.0575 / -0.0188,0.224 / 0.000317,0.6103840089996361
+insurance,bmi@15 / age@45,7.02e+03 / 6.85e+03,amplified / standalone,3.7e+03 / 7.21e+03,7.59e+03 / -371,2.04e+04 / -5.99e+03,0.6095380029703793
+wine,volatile acidity@38 / alcohol@41,0.0529 / 0.0545,standalone / amplified,0.0255 / 0.00382,0.0204 / 0.173,-0.118 / 0.158,0.6060316892206511
+insurance,age@2 / age@7,6.91e+03 / 6.68e+03,redundant / gated,8.27e+03 / 8.17e+03,-2.3e+03 / -3.25e+03,8.22e+03 / -3.68e+03,0.6001480089241606
+insurance,age@2 / bmi@13,6.91e+03 / 7.12e+03,redundant / amplified,8.27e+03 / 3.23e+03,-2.3e+03 / 6.55e+03,8.22e+03 / 2.27e+04,0.6001480089241606
+insurance,age@2 / bmi@15,6.91e+03 / 7.02e+03,redundant / amplified,8.27e+03 / 3.7e+03,-2.3e+03 / 7.59e+03,8.22e+03 / 2.04e+04,0.6001480089241606
+insurance,age@2 / age@45,6.91e+03 / 6.85e+03,redundant / standalone,8.27e+03 / 7.21e+03,-2.3e+03 / -371,8.22e+03 / -5.99e+03,0.6001480089241606
+insurance,age@2 / bmi@14,6.91e+03 / 6.89e+03,redundant / amplified,8.27e+03 / 3.44e+03,-2.3e+03 / 7.39e+03,8.22e+03 / 2.4e+04,0.6001480089241606
+wine,density@30 / sulphates@52,0.0523 / 0.0537,amplified / standalone,0.023 / 0.0606,0.104 / 0.00212,0.212 / 0.274,0.5994473438617343
+wine,density@30 / volatile acidity@38,0.0523 / 0.0529,amplified / standalone,0.023 / 0.0255,0.104 / 0.0204,0.212 / -0.118,0.5994473438617343
+insurance,bmi@14 / age@45,6.89e+03 / 6.85e+03,amplified / standalone,3.44e+03 / 7.21e+03,7.39e+03 / -371,2.4e+04 / -5.99e+03,0.5986512490025763
+wine,volatile acidity@28 / volatile acidity@38,0.0515 / 0.0529,amplified / standalone,0.0415 / 0.0255,0.0508 / 0.0204,0.186 / -0.118,0.5908415799543087
+wine,volatile acidity@28 / sulphates@52,0.0515 / 0.0537,amplified / standalone,0.0415 / 0.0606,0.0508 / 0.00212,0.186 / 0.274,0.5908415799543087
+wine,volatile acidity@13 / density@30,0.0513 / 0.0523,standalone / amplified,0.0495 / 0.023,0.0058 / 0.104,0.168 / 0.212,0.588116788498276
+wine,volatile acidity@13 / volatile acidity@28,0.0513 / 0.0515,standalone / amplified,0.0495 / 0.0415,0.0058 / 0.0508,0.168 / 0.186,0.588116788498276
+insurance,age@7 / bmi@14,6.68e+03 / 6.89e+03,gated / amplified,8.17e+03 / 3.44e+03,-3.25e+03 / 7.39e+03,-3.68e+03 / 2.4e+04,0.580495619868026
+insurance,age@7 / bmi@57,6.68e+03 / 6.44e+03,gated / amplified,8.17e+03 / 1.81e+03,-3.25e+03 / 9.22e+03,-3.68e+03 / 2.11e+04,0.580495619868026
+insurance,age@7 / bmi@15,6.68e+03 / 7.02e+03,gated / amplified,8.17e+03 / 3.7e+03,-3.25e+03 / 7.59e+03,-3.68e+03 / 2.04e+04,0.580495619868026
+insurance,age@7 / age@43,6.68e+03 / 6.5e+03,gated / standalone,8.17e+03 / 6.87e+03,-3.25e+03 / -152,-3.68e+03 / -6.69e+03,0.580495619868026
+insurance,age@7 / age@45,6.68e+03 / 6.85e+03,gated / standalone,8.17e+03 / 7.21e+03,-3.25e+03 / -371,-3.68e+03 / -5.99e+03,0.580495619868026
+bike,temp@15 / hum@49,-1.05e+03 / -1.04e+03,standalone / amplified,-940 / -983,-36.1 / -295,-1.58e+03 / 1.16e+03,0.5756062281404277
+bike,temp@13 / hum@49,-1.05e+03 / -1.04e+03,standalone / amplified,-1.12e+03 / -983,-4.69 / -295,1.34e+03 / 1.16e+03,0.573032365153328
+bike,hum@49 / yr@53,-1.04e+03 / -1.04e+03,amplified / standalone,-983 / -1.03e+03,-295 / 61.8,1.16e+03 / 662,0.5705847720107244
+bike,yr@32 / yr@48,1.04e+03 / 994,amplified / standalone,894 / 1.02e+03,236 / 113,922 / 1.24e+03,0.5703694082821271
+insurance,age@26 / bmi@57,6.51e+03 / 6.44e+03,gated / amplified,7.49e+03 / 1.81e+03,-1.72e+03 / 9.22e+03,-4.42e+03 / 2.11e+04,0.5656149976458259
+insurance,age@26 / age@43,6.51e+03 / 6.5e+03,gated / standalone,7.49e+03 / 6.87e+03,-1.72e+03 / -152,-4.42e+03 / -6.69e+03,0.5656149976458259
+insurance,age@26 / age@45,6.51e+03 / 6.85e+03,gated / standalone,7.49e+03 / 7.21e+03,-1.72e+03 / -371,-4.42e+03 / -5.99e+03,0.5656149976458259
+insurance,age@43 / bmi@57,6.5e+03 / 6.44e+03,standalone / amplified,6.87e+03 / 1.81e+03,-152 / 9.22e+03,-6.69e+03 / 2.11e+04,0.5645426682986532
+wine,sulphates@1 / volatile acidity@35,0.0486 / 0.0479,standalone / amplified,0.0456 / 0.0177,0.00948 / 0.0771,0.222 / 0.00317,0.5575629828515574
+wine,sulphates@1 / chlorides@41,0.0486 / 0.0466,standalone / amplified,0.0456 / 0.00493,0.00948 / 0.156,0.222 / 0.174,0.5575629828515574
+bike,yr@11 / hum@49,-1.02e+03 / -1.04e+03,standalone / amplified,-997 / -983,51.3 / -295,-756 / 1.16e+03,0.5566286129554121
+wine,volatile acidity@35 / total sulfur dioxide@43,0.0479 / 0.0474,amplified / standalone,0.0177 / 0.034,0.0771 / 0.00753,0.00317 / 0.102,0.5495297028613021
+wine,volatile acidity@35 / sulphates@49,0.0479 / 0.0457,amplified / standalone,0.0177 / 0.0412,0.0771 / 0.00952,0.00317 / 0.0981,0.5495297028613021
+bike,yr@15 / hum@49,-999 / -1.04e+03,standalone / amplified,-1.01e+03 / -983,3.8 / -295,-1.55e+03 / 1.16e+03,0.5464905741914773
+bike,temp@42 / yr@47,994 / 980,amplified / standalone,720 / 849,528 / 74.2,1.23e+03 / 506,0.5441187077884477
+bike,temp@42 / yr@48,994 / 994,amplified / standalone,720 / 1.02e+03,528 / 113,1.23e+03 / 1.24e+03,0.5441187077884477
+bike,yr@8 / temp@20,990 / 979,standalone / amplified,826 / 693,106 / 322,1.47e+03 / 1.57e+03,0.5415815414585237
+bike,yr@8 / temp@42,990 / 994,standalone / amplified,826 / 720,106 / 528,1.47e+03 / 1.23e+03,0.5415815414585237
+bike,yr@8 / temp@44,990 / 978,standalone / amplified,826 / 668,106 / 404,1.47e+03 / 1.22e+03,0.5415815414585237
+california,MedInc@3 / AveOccup@8,0.59 / 0.588,gated / redundant,0.702 / 0.689,-0.543 / -0.522,0.112 / 0.463,0.5402665855585886
+california,MedInc@3 / MedInc@55,0.59 / 0.571,gated / standalone,0.702 / 0.696,-0.543 / -0.0154,0.112 / -0.791,0.5402665855585886
+bike,yr@16 / atemp@19,-987 / -943,standalone / amplified,-786 / -797,121 / -661,-1.42e+03 / -1.01e+03,0.5399881733781116
+california,AveOccup@8 / MedInc@55,0.588 / 0.571,redundant / standalone,0.689 / 0.696,-0.522 / -0.0154,0.463 / -0.791,0.5378341327239171
+bike,atemp@10 / yr@16,-982 / -987,amplified / standalone,-770 / -786,-864 / 121,-861 / -1.42e+03,0.5371325387073126
+bike,atemp@10 / yr@11,-982 / -1.02e+03,amplified / standalone,-770 / -997,-864 / 51.3,-861 / -756,0.5371325387073126
+bike,atemp@10 / yr@14,-982 / -966,amplified / standalone,-770 / -1.01e+03,-864 / 115,-861 / -1.56e+03,0.5371325387073126
+bike,atemp@10 / yr@15,-982 / -999,amplified / standalone,-770 / -1.01e+03,-864 / 3.8,-861 / -1.55e+03,0.5371325387073126
+bike,yr@47 / temp@48,980 / 936,standalone / amplified,849 / 808,74.2 / 314,506 / 1.25e+03,0.5363062440122287
+bike,temp@20 / yr@48,979 / 994,amplified / standalone,693 / 1.02e+03,322 / 113,1.57e+03 / 1.24e+03,0.5359420542237181
+bike,temp@20 / yr@47,979 / 980,amplified / standalone,693 / 849,322 / 74.2,1.57e+03 / 506,0.5359420542237181
+bike,temp@20 / yr@37,979 / 974,amplified / standalone,693 / 891,322 / 103,1.57e+03 / 643,0.5359420542237181
+bike,temp@44 / yr@48,978 / 994,amplified / standalone,668 / 1.02e+03,404 / 113,1.22e+03 / 1.24e+03,0.5352352068716756
+bike,temp@44 / yr@47,978 / 980,amplified / standalone,668 / 849,404 / 74.2,1.22e+03 / 506,0.5352352068716756
+wine,chlorides@41 / sulphates@49,0.0466 / 0.0457,amplified / standalone,0.00493 / 0.0412,0.156 / 0.00952,0.174 / 0.0981,0.5338402080794389
+wine,chlorides@41 / total sulfur dioxide@43,0.0466 / 0.0474,amplified / standalone,0.00493 / 0.034,0.156 / 0.00753,0.174 / 0.102,0.5338402080794389
+bike,yr@37 / temp@42,974 / 994,standalone / amplified,891 / 720,103 / 528,643 / 1.23e+03,0.5329153800678127
+bike,yr@37 / temp@48,974 / 936,standalone / amplified,891 / 808,103 / 314,643 / 1.25e+03,0.5329153800678127
+bike,yr@37 / temp@44,974 / 978,standalone / amplified,891 / 668,103 / 404,643 / 1.22e+03,0.5329153800678127
+bike,yr@14 / yr@56,-966 / -924,standalone / gated,-1.01e+03 / -907,115 / 288,-1.56e+03 / 280,0.5286843395448856
+bike,yr@14 / atemp@19,-966 / -943,standalone / amplified,-1.01e+03 / -797,115 / -661,-1.56e+03 / -1.01e+03,0.5286843395448856
+bike,temp@5 / yr@48,966 / 994,amplified / standalone,796 / 1.02e+03,376 / 113,1.69e+03 / 1.24e+03,0.5284060502283713
+bike,temp@5 / yr@37,966 / 974,amplified / standalone,796 / 891,376 / 103,1.69e+03 / 643,0.5284060502283713
+bike,temp@5 / yr@9,966 / 947,amplified / standalone,796 / 938,376 / 21,1.69e+03 / 834,0.5284060502283713
+bike,temp@5 / yr@47,966 / 980,amplified / standalone,796 / 849,376 / 74.2,1.69e+03 / 506,0.5284060502283713
+bike,temp@5 / yr@8,966 / 990,amplified / standalone,796 / 826,376 / 106,1.69e+03 / 1.47e+03,0.5284060502283713
+wine,density@18 / sulphates@44,0.0457 / 0.0434,amplified / standalone,0.0165 / 0.0375,0.0655 / 0.0109,0.307 / 0.022,0.5236440698460574
+wine,density@18 / sulphates@18,0.0457 / 0.0436,amplified / standalone,0.0165 / 0.0363,0.0655 / 0.00988,0.307 / 0.343,0.5236440698460574
+wine,density@18 / sulphates@49,0.0457 / 0.0457,amplified / standalone,0.0165 / 0.0412,0.0655 / 0.00952,0.307 / 0.0981,0.5236440698460574
+wine,density@18 / total sulfur dioxide@43,0.0457 / 0.0474,amplified / standalone,0.0165 / 0.034,0.0655 / 0.00753,0.307 / 0.102,0.5236440698460574
+wine,sulphates@49 / residual sugar@52,0.0457 / 0.0446,standalone / amplified,0.0412 / 0.0263,0.00952 / 0.0566,0.0981 / 0.254,0.5235087219187731
+wine,residual sugar@41 / sulphates@49,0.0456 / 0.0457,amplified / standalone,0.0233 / 0.0412,0.0724 / 0.00952,0.239 / 0.0981,0.5228056324935979
+wine,residual sugar@41 / sulphates@44,0.0456 / 0.0434,amplified / standalone,0.0233 / 0.0375,0.0724 / 0.0109,0.239 / 0.022,0.5228056324935979
+wine,residual sugar@41 / total sulfur dioxide@43,0.0456 / 0.0474,amplified / standalone,0.0233 / 0.034,0.0724 / 0.00753,0.239 / 0.102,0.5228056324935979
+bike,temp@7 / atemp@19,-953 / -943,standalone / amplified,-1.05e+03 / -797,67.5 / -661,-1.84e+03 / -1.01e+03,0.5215673080468984
+bike,temp@7 / atemp@10,-953 / -982,standalone / amplified,-1.05e+03 / -770,67.5 / -864,-1.84e+03 / -861,0.5215673080468984
+bike,temp@7 / yr@56,-953 / -924,standalone / gated,-1.05e+03 / -907,67.5 / 288,-1.84e+03 / 280,0.5215673080468984
+wine,total sulfur dioxide@15 / volatile acidity@16,0.0454 / 0.0445,amplified / standalone,0.02 / 0.0278,0.0879 / 0.0245,0.164 / 0.332,0.5205119243178268
+wine,total sulfur dioxide@15 / total sulfur dioxide@43,0.0454 / 0.0474,amplified / standalone,0.02 / 0.034,0.0879 / 0.00753,0.164 / 0.102,0.5205119243178268
+wine,total sulfur dioxide@15 / sulphates@49,0.0454 / 0.0457,amplified / standalone,0.02 / 0.0412,0.0879 / 0.00952,0.164 / 0.0981,0.5205119243178268
+wine,total sulfur dioxide@15 / sulphates@18,0.0454 / 0.0436,amplified / standalone,0.02 / 0.0363,0.0879 / 0.00988,0.164 / 0.343,0.5205119243178268
+wine,total sulfur dioxide@15 / sulphates@44,0.0454 / 0.0434,amplified / standalone,0.02 / 0.0375,0.0879 / 0.0109,0.164 / 0.022,0.5205119243178268
+wine,citric acid@8 / sulphates@49,0.0453 / 0.0457,amplified / standalone,0.00612 / 0.0412,0.0902 / 0.00952,0.252 / 0.0981,0.5192808805967654
+wine,citric acid@8 / total sulfur dioxide@43,0.0453 / 0.0474,amplified / standalone,0.00612 / 0.034,0.0902 / 0.00753,0.252 / 0.102,0.5192808805967654
+wine,citric acid@8 / volatile acidity@16,0.0453 / 0.0445,amplified / standalone,0.00612 / 0.0278,0.0902 / 0.0245,0.252 / 0.332,0.5192808805967654
+wine,citric acid@8 / sulphates@18,0.0453 / 0.0436,amplified / standalone,0.00612 / 0.0363,0.0902 / 0.00988,0.252 / 0.343,0.5192808805967654
+wine,citric acid@8 / sulphates@44,0.0453 / 0.0434,amplified / standalone,0.00612 / 0.0375,0.0902 / 0.0109,0.252 / 0.022,0.5192808805967654
+bike,yr@9 / temp@20,947 / 979,standalone / amplified,938 / 693,21 / 322,834 / 1.57e+03,0.5183057214171329
+bike,yr@9 / temp@44,947 / 978,standalone / amplified,938 / 668,21 / 404,834 / 1.22e+03,0.5183057214171329
+bike,yr@9 / temp@48,947 / 936,standalone / amplified,938 / 808,21 / 314,834 / 1.25e+03,0.5183057214171329
+bike,yr@9 / temp@42,947 / 994,standalone / amplified,938 / 720,21 / 528,834 / 1.23e+03,0.5183057214171329
+bike,yr@9 / temp@36,947 / 937,standalone / amplified,938 / 663,21 / 366,834 / 1.43e+03,0.5183057214171329
+bike,yr@7 / yr@56,-947 / -924,redundant / gated,-1.15e+03 / -907,421 / 288,-2.1e+03 / 280,0.5183009316174912
+bike,yr@7 / yr@16,-947 / -987,redundant / standalone,-1.15e+03 / -786,421 / 121,-2.1e+03 / -1.42e+03,0.5183009316174912
+bike,yr@7 / yr@14,-947 / -966,redundant / standalone,-1.15e+03 / -1.01e+03,421 / 115,-2.1e+03 / -1.56e+03,0.5183009316174912
+bike,yr@7 / atemp@10,-947 / -982,redundant / amplified,-1.15e+03 / -770,421 / -864,-2.1e+03 / -861,0.5183009316174912
+bike,yr@7 / atemp@19,-947 / -943,redundant / amplified,-1.15e+03 / -797,421 / -661,-2.1e+03 / -1.01e+03,0.5183009316174912
+bike,yr@7 / temp@7,-947 / -953,redundant / standalone,-1.15e+03 / -1.05e+03,421 / 67.5,-2.1e+03 / -1.84e+03,0.5183009316174912
+bike,atemp@19 / yr@56,-943 / -924,amplified / gated,-797 / -907,-661 / 288,-1.01e+03 / 280,0.5161206063986815
+bike,temp@36 / yr@37,937 / 974,amplified / standalone,663 / 891,366 / 103,1.43e+03 / 643,0.5128375232995724
+bike,temp@36 / yr@47,937 / 980,amplified / standalone,663 / 849,366 / 74.2,1.43e+03 / 506,0.5128375232995724
+wine,volatile acidity@16 / density@18,0.0445 / 0.0457,standalone / amplified,0.0278 / 0.0165,0.0245 / 0.0655,0.332 / 0.307,0.5096342632933059
+wine,volatile acidity@16 / residual sugar@52,0.0445 / 0.0446,standalone / amplified,0.0278 / 0.0263,0.0245 / 0.0566,0.332 / 0.254,0.5096342632933059
+wine,volatile acidity@16 / residual sugar@41,0.0445 / 0.0456,standalone / amplified,0.0278 / 0.0233,0.0245 / 0.0724,0.332 / 0.239,0.5096342632933059
+wine,volatile acidity@16 / chlorides@41,0.0445 / 0.0466,standalone / amplified,0.0278 / 0.00493,0.0245 / 0.156,0.332 / 0.174,0.5096342632933059
+wine,volatile acidity@16 / free sulfur dioxide@18,0.0445 / 0.0444,standalone / amplified,0.0278 / 0.0291,0.0245 / 0.0649,0.332 / 0.295,0.5096342632933059
+wine,free sulfur dioxide@18 / sulphates@18,0.0444 / 0.0436,amplified / standalone,0.0291 / 0.0363,0.0649 / 0.00988,0.295 / 0.343,0.5087723529382234
+wine,free sulfur dioxide@18 / sulphates@44,0.0444 / 0.0434,amplified / standalone,0.0291 / 0.0375,0.0649 / 0.0109,0.295 / 0.022,0.5087723529382234
+wine,free sulfur dioxide@18 / sulphates@49,0.0444 / 0.0457,amplified / standalone,0.0291 / 0.0412,0.0649 / 0.00952,0.295 / 0.0981,0.5087723529382234
+wine,free sulfur dioxide@18 / total sulfur dioxide@54,0.0444 / 0.0422,amplified / standalone,0.0291 / 0.0311,0.0649 / 0.014,0.295 / 0.217,0.5087723529382234
+wine,density@8 / sulphates@49,0.0443 / 0.0457,amplified / standalone,0.0135 / 0.0412,0.0771 / 0.00952,0.257 / 0.0981,0.5076358439065015
+wine,density@8 / sulphates@18,0.0443 / 0.0436,amplified / standalone,0.0135 / 0.0363,0.0771 / 0.00988,0.257 / 0.343,0.5076358439065015
+wine,density@8 / volatile acidity@16,0.0443 / 0.0445,amplified / standalone,0.0135 / 0.0278,0.0771 / 0.0245,0.257 / 0.332,0.5076358439065015
+wine,density@8 / sulphates@44,0.0443 / 0.0434,amplified / standalone,0.0135 / 0.0375,0.0771 / 0.0109,0.257 / 0.022,0.5076358439065015
+wine,density@8 / total sulfur dioxide@54,0.0443 / 0.0422,amplified / standalone,0.0135 / 0.0311,0.0771 / 0.014,0.257 / 0.217,0.5076358439065015
+wine,pH@0 / sulphates@44,0.044 / 0.0434,amplified / standalone,0.0134 / 0.0375,0.0523 / 0.0109,0.222 / 0.022,0.504067739231197
+wine,pH@0 / total sulfur dioxide@54,0.044 / 0.0422,amplified / standalone,0.0134 / 0.0311,0.0523 / 0.014,0.222 / 0.217,0.504067739231197
+wine,pH@0 / sulphates@18,0.044 / 0.0436,amplified / standalone,0.0134 / 0.0363,0.0523 / 0.00988,0.222 / 0.343,0.504067739231197
+wine,pH@0 / sulphates@49,0.044 / 0.0457,amplified / standalone,0.0134 / 0.0412,0.0523 / 0.00952,0.222 / 0.0981,0.504067739231197
+wine,pH@0 / volatile acidity@16,0.044 / 0.0445,amplified / standalone,0.0134 / 0.0278,0.0523 / 0.0245,0.222 / 0.332,0.504067739231197
+bike,yr@0 / temp@36,916 / 937,standalone / amplified,867 / 663,110 / 366,966 / 1.43e+03,0.5015047119662633
+bike,yr@0 / temp@48,916 / 936,standalone / amplified,867 / 808,110 / 314,966 / 1.25e+03,0.5015047119662633
+wine,sulphates@18 / residual sugar@52,0.0436 / 0.0446,standalone / amplified,0.0363 / 0.0263,0.00988 / 0.0566,0.343 / 0.254,0.49941118182492245
+wine,sulphates@18 / residual sugar@41,0.0436 / 0.0456,standalone / amplified,0.0363 / 0.0233,0.00988 / 0.0724,0.343 / 0.239,0.49941118182492245
+wine,sulphates@18 / residual sugar@50,0.0436 / 0.0416,standalone / amplified,0.0363 / 0.0152,0.00988 / 0.0515,0.343 / 0.2,0.49941118182492245
+california,MedInc@10 / MedInc@26,-0.544 / -0.531,standalone / amplified,-0.417 / -0.423,-0.0194 / -0.186,-0.476 / 0.316,0.49802299453488363
+california,MedInc@10 / Longitude@46,-0.544 / -0.561,standalone / amplified,-0.417 / -0.447,-0.0194 / -0.597,-0.476 / 0.251,0.49802299453488363
+california,MedInc@10 / Longitude@47,-0.544 / -0.566,standalone / amplified,-0.417 / -0.453,-0.0194 / -0.716,-0.476 / 0.902,0.49802299453488363
+wine,sulphates@44 / residual sugar@50,0.0434 / 0.0416,standalone / amplified,0.0375 / 0.0152,0.0109 / 0.0515,0.022 / 0.2,0.49754840724175475
+wine,sulphates@44 / residual sugar@52,0.0434 / 0.0446,standalone / amplified,0.0375 / 0.0263,0.0109 / 0.0566,0.022 / 0.254,0.49754840724175475
+insurance,age@14 / bmi@39,5.71e+03 / 5.62e+03,redundant / amplified,6.62e+03 / 2.15e+03,-2.33e+03 / 6.72e+03,3.06e+04 / 1.61e+04,0.4961094792369954
+insurance,age@14 / bmi@48,5.71e+03 / 5.87e+03,redundant / amplified,6.62e+03 / 1.66e+03,-2.33e+03 / 5.61e+03,3.06e+04 / 2.1e+04,0.4961094792369954
+wine,residual sugar@50 / total sulfur dioxide@54,0.0416 / 0.0422,amplified / standalone,0.0152 / 0.0311,0.0515 / 0.014,0.2 / 0.217,0.4766789604080955
+insurance,age@6 / age@22,-5.41e+03 / -5.3e+03,amplified / standalone,-4.13e+03 / -4.32e+03,-2.32e+03 / -713,-3.98e+03 / -7.66e+03,0.4700551702061725
+bike,atemp@39 / yr@45,-857 / -832,amplified / redundant,-775 / -1.01e+03,-349 / 485,-2.76e+03 / -1.68e+03,0.46907127781608493
+bike,atemp@39 / yr@50,-857 / -886,amplified / gated,-775 / -1.02e+03,-349 / 417,-2.76e+03 / 283,0.46907127781608493
+bike,atemp@39 / hum@45,-857 / -839,amplified / standalone,-775 / -923,-349 / 57.9,-2.76e+03 / -1.34e+03,0.46907127781608493
+bike,atemp@39 / yr@58,-857 / -825,amplified / gated,-775 / -1.09e+03,-349 / 492,-2.76e+03 / 254,0.46907127781608493
+wine,total sulfur dioxide@31 / total sulfur dioxide@54,0.0408 / 0.0422,amplified / standalone,0.0194 / 0.0311,0.0601 / 0.014,0.0501 / 0.217,0.467260286535867
+wine,total sulfur dioxide@31 / volatile acidity@47,0.0408 / 0.0388,amplified / standalone,0.0194 / 0.034,0.0601 / 0.0158,0.0501 / 0.232,0.467260286535867
+insurance,age@22 / age@23,-5.3e+03 / -5.08e+03,standalone / amplified,-4.32e+03 / -4.17e+03,-713 / -1.66e+03,-7.66e+03 / -5.33e+03,0.46006166014466576
+insurance,age@22 / smoker@41,-5.3e+03 / -5.57e+03,standalone / amplified,-4.32e+03 / -4.85e+03,-713 / -2.04e+03,-7.66e+03 / -3.48e+03,0.46006166014466576
+bike,hum@45 / hum@56,-839 / -800,standalone / gated,-923 / -885,57.9 / 286,-1.34e+03 / 260,0.4590246500833123
+bike,hum@45 / yr@58,-839 / -825,standalone / gated,-923 / -1.09e+03,57.9 / 492,-1.34e+03 / 254,0.4590246500833123
+wine,free sulfur dioxide@41 / volatile acidity@47,0.04 / 0.0388,amplified / standalone,-0.00255 / 0.034,0.132 / 0.0158,0.206 / 0.232,0.45858603610498916
+bike,temp@9 / yr@13,837 / 833,standalone / gated,711 / 913,13.2 / -226,1.07e+03 / -476,0.4581275703711008
+bike,temp@9 / yr@19,837 / 826,standalone / gated,711 / 864,13.2 / -280,1.07e+03 / -3.05e+03,0.4581275703711008
+bike,yr@13 / temp@43,833 / 793,gated / standalone,913 / 740,-226 / -22.4,-476 / -745,0.455997106945688
+bike,yr@13 / temp@55,833 / 798,gated / standalone,913 / 802,-226 / -15.3,-476 / -860,0.455997106945688
+bike,yr@13 / temp@50,833 / 792,gated / standalone,913 / 784,-226 / 36.5,-476 / -1.14e+03,0.455997106945688
+bike,yr@13 / yr@28,833 / 867,gated / standalone,913 / 768,-226 / -120,-476 / -1.97e+03,0.455997106945688
+bike,yr@13 / temp@17,833 / 831,gated / standalone,913 / 621,-226 / 142,-476 / 2.16e+03,0.455997106945688
+bike,yr@45 / hum@45,-832 / -839,redundant / standalone,-1.01e+03 / -923,485 / 57.9,-1.68e+03 / -1.34e+03,0.4553972223405078
+bike,yr@45 / yr@58,-832 / -825,redundant / gated,-1.01e+03 / -1.09e+03,485 / 492,-1.68e+03 / 254,0.4553972223405078
+bike,yr@45 / hum@56,-832 / -800,redundant / gated,-1.01e+03 / -885,485 / 286,-1.68e+03 / 260,0.4553972223405078
+bike,temp@17 / yr@19,831 / 826,standalone / gated,621 / 864,142 / -280,2.16e+03 / -3.05e+03,0.4544677010435458
+bike,yr@39 / atemp@39,-828 / -857,redundant / amplified,-1.13e+03 / -775,270 / -349,-3.02e+03 / -2.76e+03,0.4530283564116211
+bike,yr@39 / yr@58,-828 / -825,redundant / gated,-1.13e+03 / -1.09e+03,270 / 492,-3.02e+03 / 254,0.4530283564116211
+bike,yr@39 / atemp@41,-828 / -811,redundant / amplified,-1.13e+03 / -660,270 / -405,-3.02e+03 / -304,0.4530283564116211
+bike,yr@39 / hum@56,-828 / -800,redundant / gated,-1.13e+03 / -885,270 / 286,-3.02e+03 / 260,0.4530283564116211
+bike,yr@39 / hum@45,-828 / -839,redundant / standalone,-1.13e+03 / -923,270 / 57.9,-3.02e+03 / -1.34e+03,0.4530283564116211
+bike,yr@19 / temp@50,826 / 792,gated / standalone,864 / 784,-280 / 36.5,-3.05e+03 / -1.14e+03,0.4519764368286353
+bike,yr@19 / temp@43,826 / 793,gated / standalone,864 / 740,-280 / -22.4,-3.05e+03 / -745,0.4519764368286353
+bike,yr@19 / temp@55,826 / 798,gated / standalone,864 / 802,-280 / -15.3,-3.05e+03 / -860,0.4519764368286353
+bike,yr@19 / yr@28,826 / 867,gated / standalone,864 / 768,-280 / -120,-3.05e+03 / -1.97e+03,0.4519764368286353
+bike,yr@1 / atemp@39,-821 / -857,redundant / amplified,-1.03e+03 / -775,268 / -349,-2.25e+03 / -2.76e+03,0.4495001622242895
+bike,yr@1 / yr@58,-821 / -825,redundant / gated,-1.03e+03 / -1.09e+03,268 / 492,-2.25e+03 / 254,0.4495001622242895
+bike,yr@1 / hum@45,-821 / -839,redundant / standalone,-1.03e+03 / -923,268 / 57.9,-2.25e+03 / -1.34e+03,0.4495001622242895
+bike,yr@1 / hum@56,-821 / -800,redundant / gated,-1.03e+03 / -885,268 / 286,-2.25e+03 / 260,0.4495001622242895
+bike,yr@1 / atemp@41,-821 / -811,redundant / amplified,-1.03e+03 / -660,268 / -405,-2.25e+03 / -304,0.4495001622242895
+bike,yr@26 / yr@58,-814 / -825,redundant / gated,-1.05e+03 / -1.09e+03,455 / 492,-2.09e+03 / 254,0.4456817517999433
+bike,yr@26 / atemp@39,-814 / -857,redundant / amplified,-1.05e+03 / -775,455 / -349,-2.09e+03 / -2.76e+03,0.4456817517999433
+bike,yr@26 / atemp@41,-814 / -811,redundant / amplified,-1.05e+03 / -660,455 / -405,-2.09e+03 / -304,0.4456817517999433
+bike,yr@26 / hum@56,-814 / -800,redundant / gated,-1.05e+03 / -885,455 / 286,-2.09e+03 / 260,0.4456817517999433
+bike,yr@26 / hum@45,-814 / -839,redundant / standalone,-1.05e+03 / -923,455 / 57.9,-2.09e+03 / -1.34e+03,0.4456817517999433
+wine,volatile acidity@47 / density@54,0.0388 / 0.0375,standalone / amplified,0.034 / 0.0154,0.0158 / 0.0612,0.232 / 0.186,0.44479594844955156
+bike,atemp@41 / hum@56,-811 / -800,amplified / gated,-660 / -885,-405 / 286,-304 / 260,0.4436477629601568
+bike,atemp@41 / hum@45,-811 / -839,amplified / standalone,-660 / -923,-405 / 57.9,-304 / -1.34e+03,0.4436477629601568
+bike,atemp@41 / yr@45,-811 / -832,amplified / redundant,-660 / -1.01e+03,-405 / 485,-304 / -1.68e+03,0.4436477629601568
+bike,atemp@41 / yr@58,-811 / -825,amplified / gated,-660 / -1.09e+03,-405 / 492,-304 / 254,0.4436477629601568
+wine,residual sugar@35 / volatile acidity@47,0.0385 / 0.0388,amplified / standalone,-0.00105 / 0.034,0.093 / 0.0158,0.00602 / 0.232,0.4412183213235264
+wine,density@15 / volatile acidity@47,0.0375 / 0.0388,amplified / standalone,-0.00462 / 0.034,0.132 / 0.0158,0.145 / 0.232,0.4302829552542556
+california,HouseAge@8 / MedInc@54,-0.47 / -0.483,amplified / standalone,-0.116 / -0.355,-0.7 / -0.0231,1.45 / -0.311,0.43002929957325103
+bike,yr@41 / temp@43,778 / 793,gated / standalone,852 / 740,-292 / -22.4,-1.93e+03 / -745,0.4258182763453369
+bike,yr@41 / temp@50,778 / 792,gated / standalone,852 / 784,-292 / 36.5,-1.93e+03 / -1.14e+03,0.4258182763453369
+bike,yr@41 / temp@55,778 / 798,gated / standalone,852 / 802,-292 / -15.3,-1.93e+03 / -860,0.4258182763453369
+bike,yr@41 / temp@46,778 / 780,gated / standalone,852 / 646,-292 / 61.9,-1.93e+03 / -904,0.4258182763453369
+bike,yr@41 / temp@58,778 / 777,gated / standalone,852 / 723,-292 / -20.1,-1.93e+03 / -1.05e+03,0.4258182763453369
+bike,yr@6 / atemp@6,-776 / -769,redundant / standalone,-1.02e+03 / -760,413 / -41.3,-2.68e+03 / -2.48e+03,0.4248401266010496
+bike,yr@6 / hum@56,-776 / -800,redundant / gated,-1.02e+03 / -885,413 / 286,-2.68e+03 / 260,0.4248401266010496
+bike,yr@6 / atemp@41,-776 / -811,redundant / amplified,-1.02e+03 / -660,413 / -405,-2.68e+03 / -304,0.4248401266010496
+bike,yr@6 / temp@29,-776 / -743,redundant / standalone,-1.02e+03 / -773,413 / 82.1,-2.68e+03 / 1.41e+03,0.4248401266010496
+bike,atemp@6 / hum@56,-769 / -800,standalone / gated,-760 / -885,-41.3 / 286,-2.48e+03 / 260,0.4207037207692398
+bike,atemp@6 / yr@23,-769 / -756,standalone / redundant,-760 / -1e+03,-41.3 / 462,-2.48e+03 / -2.36e+03,0.4207037207692398
+bike,yr@23 / atemp@51,-756 / -734,redundant / standalone,-1e+03 / -700,462 / 22.8,-2.36e+03 / -984,0.4138574157121354
+bike,yr@23 / temp@29,-756 / -743,redundant / standalone,-1e+03 / -773,462 / 82.1,-2.36e+03 / 1.41e+03,0.4138574157121354
+california,Latitude@10 / MedInc@12,-0.419 / -0.418,amplified / standalone,-0.365 / -0.289,-0.346 / -1.98e-05,-0.201 / -0.0157,0.383794186983495
+california,MedInc@12 / AveOccup@57,-0.418 / -0.427,standalone / amplified,-0.289 / -0.237,-1.98e-05 / -0.413,-0.0157 / 0.736,0.3827597781739847
+california,MedInc@12 / Longitude@52,-0.418 / -0.417,standalone / amplified,-0.289 / -0.422,-1.98e-05 / -0.178,-0.0157 / 0.259,0.3827597781739847
+california,MedInc@12 / AveOccup@37,-0.418 / -0.416,standalone / amplified,-0.289 / -0.232,-1.98e-05 / -0.223,-0.0157 / -0.0239,0.3827597781739847
+california,AveOccup@7 / MedInc@12,-0.411 / -0.418,amplified / standalone,-0.233 / -0.289,-0.319 / -1.98e-05,0.23 / -0.0157,0.3759891761036657
+bike,yr@10 / temp@40,678 / 710,gated / standalone,895 / 573,-591 / -110,-2.8e+03 / -1.04e+03,0.3709669418603079
+bike,temp@22 / atemp@30,-671 / -670,gated / standalone,-775 / -675,383 / 85.4,1.01e+03 / -1.02e+03,0.3669550042631546
+california,Longitude@4 / Latitude@18,0.391 / 0.382,amplified / gated,0.332 / 0.781,0.52 / -0.365,-0.617 / -0.886,0.3574342998653988
+california,Longitude@4 / Latitude@58,0.391 / 0.402,amplified / gated,0.332 / 0.764,0.52 / -0.328,-0.617 / -0.444,0.3574342998653988
+insurance,age@38 / children@46,4.09e+03 / 3.92e+03,standalone / amplified,3.65e+03 / 850,-81.1 / 7.94e+03,6.34e+03 / -3.54e+03,0.3555440010810477
+wine,sulphates@3 / pH@15,0.0309 / 0.0321,redundant / amplified,0.0602 / 0.0129,-0.0635 / 0.0664,0.0743 / 0.193,0.35471601758931615
+wine,sulphates@3 / density@58,0.0309 / 0.0302,redundant / amplified,0.0602 / 0.0108,-0.0635 / 0.0522,0.0743 / 0.416,0.35471601758931615
+wine,sulphates@3 / density@41,0.0309 / 0.0295,redundant / amplified,0.0602 / 0.00302,-0.0635 / 0.119,0.0743 / 0.213,0.35471601758931615
+california,MedInc@11 / MedInc@27,-0.382 / -0.371,standalone / amplified,-0.349 / -0.129,0.0487 / -0.326,0.218 / -0.491,0.34977707077900455
+california,MedInc@11 / Longitude@56,-0.382 / -0.388,standalone / amplified,-0.349 / -0.47,0.0487 / -0.506,0.218 / -0.499,0.34977707077900455
+california,MedInc@11 / Latitude@28,-0.382 / -0.386,standalone / amplified,-0.349 / -0.389,0.0487 / -0.319,0.218 / 0.333,0.34977707077900455
+insurance,age@34 / smoker@56,-3.98e+03 / -3.91e+03,standalone / redundant,-4.1e+03 / -5.89e+03,-271 / 1.93e+03,-5.26e+03 / -7.16e+03,0.3459894608683746
+bike,temp@35 / season_4@51,629 / 614,standalone / amplified,571 / 322,-55.4 / 665,227 / -2.65e+03,0.34437514188037255
+insurance,smoker@9 / age@34,-3.95e+03 / -3.98e+03,gated / standalone,-5.28e+03 / -4.1e+03,2.05e+03 / -271,191 / -5.26e+03,0.3428329737939843
+insurance,smoker@9 / smoker@37,-3.95e+03 / -4.15e+03,gated / standalone,-5.28e+03 / -4.39e+03,2.05e+03 / 444,191 / 118,0.3428329737939843
+insurance,smoker@9 / smoker@40,-3.95e+03 / -3.76e+03,gated / redundant,-5.28e+03 / -4.06e+03,2.05e+03 / 1.91e+03,191 / -5.48e+03,0.3428329737939843
+insurance,smoker@9 / smoker@30,-3.95e+03 / -3.77e+03,gated / redundant,-5.28e+03 / -5.15e+03,2.05e+03 / 1.92e+03,191 / -2.22e+03,0.3428329737939843
+insurance,smoker@9 / age@29,-3.95e+03 / -3.81e+03,gated / redundant,-5.28e+03 / -4.76e+03,2.05e+03 / 2.33e+03,191 / -4.71e+03,0.3428329737939843
+insurance,smoker@9 / smoker@56,-3.95e+03 / -3.91e+03,gated / redundant,-5.28e+03 / -5.89e+03,2.05e+03 / 1.93e+03,191 / -7.16e+03,0.3428329737939843
+wine,residual sugar@1 / residual sugar@45,0.0297 / 0.0286,amplified / redundant,0.018 / 0.06,0.0457 / -0.0516,0.214 / 0.419,0.34008333709075156
+wine,residual sugar@1 / sulphates@3,0.0297 / 0.0309,amplified / redundant,0.018 / 0.0602,0.0457 / -0.0635,0.214 / 0.0743,0.34008333709075156
+bike,season_4@2 / temp@35,621 / 629,amplified / standalone,327 / 571,841 / -55.4,-2.17e+03 / 227,0.3397034845987848
+wine,density@41 / residual sugar@45,0.0295 / 0.0286,amplified / redundant,0.00302 / 0.06,0.119 / -0.0516,0.213 / 0.419,0.33847992153386836
+california,Longitude@5 / MedInc@11,-0.367 / -0.382,amplified / standalone,-0.316 / -0.349,-0.46 / 0.0487,0.268 / 0.218,0.3359684215817467
+bike,season_4@51 / temp@59,614 / 589,amplified / standalone,322 / 432,665 / 48.6,-2.65e+03 / 1.27e+03,0.3358503281040014
+wine,chlorides@19 / residual sugar@45,0.0291 / 0.0286,amplified / redundant,0.0115 / 0.06,0.0519 / -0.0516,0.00885 / 0.419,0.3331784529469733
+wine,residual sugar@23 / residual sugar@45,0.029 / 0.0286,amplified / redundant,0.0017 / 0.06,0.0463 / -0.0516,0.105 / 0.419,0.3328711062424329
+bike,season_4@30 / temp@59,607 / 589,amplified / standalone,250 / 432,697 / 48.6,-2.56e+03 / 1.27e+03,0.3319630584051078
+bike,season_4@30 / temp@35,607 / 629,amplified / standalone,250 / 571,697 / -55.4,-2.56e+03 / 227,0.3319630584051078
+insurance,age@29 / smoker@45,-3.81e+03 / -3.64e+03,redundant / gated,-4.76e+03 / -5.76e+03,2.33e+03 / 3.2e+03,-4.71e+03 / 3.4e+03,0.33063491804567413
+insurance,age@29 / age@34,-3.81e+03 / -3.98e+03,redundant / standalone,-4.76e+03 / -4.1e+03,2.33e+03 / -271,-4.71e+03 / -5.26e+03,0.33063491804567413
+insurance,age@29 / smoker@43,-3.81e+03 / -3.62e+03,redundant / gated,-4.76e+03 / -6.03e+03,2.33e+03 / 2.98e+03,-4.71e+03 / 3.07e+03,0.33063491804567413
+insurance,smoker@30 / smoker@45,-3.77e+03 / -3.64e+03,redundant / gated,-5.15e+03 / -5.76e+03,1.92e+03 / 3.2e+03,-2.22e+03 / 3.4e+03,0.3278055137414756
+insurance,smoker@30 / smoker@43,-3.77e+03 / -3.62e+03,redundant / gated,-5.15e+03 / -6.03e+03,1.92e+03 / 2.98e+03,-2.22e+03 / 3.07e+03,0.3278055137414756
+wine,residual sugar@45 / citric acid@54,0.0286 / 0.0276,redundant / amplified,0.06 / 0.0139,-0.0516 / 0.0738,0.419 / 0.175,0.32744827837796675
+insurance,smoker@40 / smoker@43,-3.76e+03 / -3.62e+03,redundant / gated,-4.06e+03 / -6.03e+03,1.91e+03 / 2.98e+03,-5.48e+03 / 3.07e+03,0.32611459113570723
+insurance,smoker@40 / smoker@45,-3.76e+03 / -3.64e+03,redundant / gated,-4.06e+03 / -5.76e+03,1.91e+03 / 3.2e+03,-5.48e+03 / 3.4e+03,0.32611459113570723
+bike,temp@0 / season_4@2,595 / 621,standalone / amplified,615 / 327,85.8 / 841,1.24e+03 / -2.17e+03,0.32542160910852896
+bike,temp@0 / season_4@51,595 / 614,standalone / amplified,615 / 322,85.8 / 665,1.24e+03 / -2.65e+03,0.32542160910852896
+bike,temp@0 / season_4@30,595 / 607,standalone / amplified,615 / 250,85.8 / 697,1.24e+03 / -2.56e+03,0.32542160910852896
+insurance,smoker@3 / smoker@6,-3.74e+03 / -3.65e+03,gated / redundant,-5.72e+03 / -4.2e+03,2.75e+03 / 2.02e+03,191 / -8.24e+03,0.32521787941070357
+insurance,smoker@3 / smoker@30,-3.74e+03 / -3.77e+03,gated / redundant,-5.72e+03 / -5.15e+03,2.75e+03 / 1.92e+03,191 / -2.22e+03,0.32521787941070357
+insurance,smoker@3 / smoker@40,-3.74e+03 / -3.76e+03,gated / redundant,-5.72e+03 / -4.06e+03,2.75e+03 / 1.91e+03,191 / -5.48e+03,0.32521787941070357
+insurance,smoker@3 / age@29,-3.74e+03 / -3.81e+03,gated / redundant,-5.72e+03 / -4.76e+03,2.75e+03 / 2.33e+03,191 / -4.71e+03,0.32521787941070357
+insurance,smoker@3 / smoker@56,-3.74e+03 / -3.91e+03,gated / redundant,-5.72e+03 / -5.89e+03,2.75e+03 / 1.93e+03,191 / -7.16e+03,0.32521787941070357
+insurance,smoker@28 / smoker@56,-3.73e+03 / -3.91e+03,gated / redundant,-4.62e+03 / -5.89e+03,2.06e+03 / 1.93e+03,435 / -7.16e+03,0.3238704251551444
+insurance,smoker@28 / age@29,-3.73e+03 / -3.81e+03,gated / redundant,-4.62e+03 / -4.76e+03,2.06e+03 / 2.33e+03,435 / -4.71e+03,0.3238704251551444
+insurance,smoker@28 / smoker@40,-3.73e+03 / -3.76e+03,gated / redundant,-4.62e+03 / -4.06e+03,2.06e+03 / 1.91e+03,435 / -5.48e+03,0.3238704251551444
+insurance,smoker@28 / smoker@30,-3.73e+03 / -3.77e+03,gated / redundant,-4.62e+03 / -5.15e+03,2.06e+03 / 1.92e+03,435 / -2.22e+03,0.3238704251551444
+insurance,smoker@24 / age@33,-3.68e+03 / -3.52e+03,gated / amplified,-6.41e+03 / -3.08e+03,3.01e+03 / -1.6e+03,400 / -3.31e+03,0.31923871277690896
+insurance,smoker@24 / smoker@40,-3.68e+03 / -3.76e+03,gated / redundant,-6.41e+03 / -4.06e+03,3.01e+03 / 1.91e+03,400 / -5.48e+03,0.31923871277690896
+insurance,smoker@24 / age@29,-3.68e+03 / -3.81e+03,gated / redundant,-6.41e+03 / -4.76e+03,3.01e+03 / 2.33e+03,400 / -4.71e+03,0.31923871277690896
+insurance,smoker@24 / smoker@33,-3.68e+03 / -3.51e+03,gated / redundant,-6.41e+03 / -4.54e+03,3.01e+03 / 2.12e+03,400 / -5.57e+03,0.31923871277690896
+insurance,smoker@24 / smoker@30,-3.68e+03 / -3.77e+03,gated / redundant,-6.41e+03 / -5.15e+03,3.01e+03 / 1.92e+03,400 / -2.22e+03,0.31923871277690896
+insurance,smoker@6 / smoker@24,-3.65e+03 / -3.68e+03,redundant / gated,-4.2e+03 / -6.41e+03,2.02e+03 / 3.01e+03,-8.24e+03 / 400,0.3166346901573169
+insurance,smoker@6 / smoker@43,-3.65e+03 / -3.62e+03,redundant / gated,-4.2e+03 / -6.03e+03,2.02e+03 / 2.98e+03,-8.24e+03 / 3.07e+03,0.3166346901573169
+insurance,smoker@6 / smoker@28,-3.65e+03 / -3.73e+03,redundant / gated,-4.2e+03 / -4.62e+03,2.02e+03 / 2.06e+03,-8.24e+03 / 435,0.3166346901573169
+insurance,smoker@6 / age@33,-3.65e+03 / -3.52e+03,redundant / amplified,-4.2e+03 / -3.08e+03,2.02e+03 / -1.6e+03,-8.24e+03 / -3.31e+03,0.3166346901573169
+insurance,smoker@6 / smoker@45,-3.65e+03 / -3.64e+03,redundant / gated,-4.2e+03 / -5.76e+03,2.02e+03 / 3.2e+03,-8.24e+03 / 3.4e+03,0.3166346901573169
+wine,chlorides@37 / residual sugar@45,0.0275 / 0.0286,amplified / redundant,0.00475 / 0.06,0.0506 / -0.0516,-0.0896 / 0.419,0.3149291892311792
+california,AveOccup@35 / Latitude@50,-0.334 / -0.32,amplified / standalone,-0.212 / -0.481,-0.288 / 0.0416,0.986 / 0.843,0.3060563111732107
+insurance,age@33 / smoker@45,-3.52e+03 / -3.64e+03,amplified / gated,-3.08e+03 / -5.76e+03,-1.6e+03 / 3.2e+03,-3.31e+03 / 3.4e+03,0.30536048449908226
+insurance,age@33 / smoker@43,-3.52e+03 / -3.62e+03,amplified / gated,-3.08e+03 / -6.03e+03,-1.6e+03 / 2.98e+03,-3.31e+03 / 3.07e+03,0.30536048449908226
+insurance,age@33 / smoker@33,-3.52e+03 / -3.51e+03,amplified / redundant,-3.08e+03 / -4.54e+03,-1.6e+03 / 2.12e+03,-3.31e+03 / -5.57e+03,0.30536048449908226
+bike,season_4@13 / temp@53,558 / 549,amplified / standalone,204 / 469,609 / 58.9,-603 / -836,0.3051395315685131
+insurance,smoker@33 / smoker@45,-3.51e+03 / -3.64e+03,redundant / gated,-4.54e+03 / -5.76e+03,2.12e+03 / 3.2e+03,-5.57e+03 / 3.4e+03,0.30483217416497455
+insurance,smoker@33 / smoker@43,-3.51e+03 / -3.62e+03,redundant / gated,-4.54e+03 / -6.03e+03,2.12e+03 / 2.98e+03,-5.57e+03 / 3.07e+03,0.30483217416497455
+california,MedInc@20 / Latitude@32,0.333 / 0.346,amplified / gated,0.0698 / 0.67,0.291 / -0.304,1.46 / -0.401,0.30471928234153367
+california,MedInc@20 / Latitude@46,0.333 / 0.319,amplified / gated,0.0698 / 0.639,0.291 / -0.314,1.46 / -1.12,0.30471928234153367
+california,MedInc@20 / Latitude@24,0.333 / 0.342,amplified / gated,0.0698 / 0.623,0.291 / -0.213,1.46 / -0.879,0.30471928234153367
+insurance,smoker@8 / smoker@43,-3.49e+03 / -3.62e+03,redundant / gated,-5.82e+03 / -6.03e+03,3.55e+03 / 2.98e+03,-6.48e+03 / 3.07e+03,0.3030502988097501
+insurance,smoker@8 / age@33,-3.49e+03 / -3.52e+03,redundant / amplified,-5.82e+03 / -3.08e+03,3.55e+03 / -1.6e+03,-6.48e+03 / -3.31e+03,0.3030502988097501
+insurance,smoker@8 / smoker@45,-3.49e+03 / -3.64e+03,redundant / gated,-5.82e+03 / -5.76e+03,3.55e+03 / 3.2e+03,-6.48e+03 / 3.4e+03,0.3030502988097501
+california,Latitude@41 / Latitude@50,-0.329 / -0.32,amplified / standalone,-0.0666 / -0.481,-0.839 / 0.0416,-0.286 / 0.843,0.3012977160868857

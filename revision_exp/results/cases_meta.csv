@@ -1,0 +1,3 @@
+dataset,task,score,n_train,n_test,representative_index,n_instances
+insurance,reg,0.8644160435277447,1070,268,6,50
+wine,clf,0.6176470588235294,1087,272,8,50
