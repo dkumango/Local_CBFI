@@ -1,128 +1,48 @@
-# Beyond Feature Attribution: Recovering Latent Interaction Structures via Localized CBFI
+# Localized CBFI — standalone and interaction effects with a case-based taxonomy
 
-![Framework](images/Fig_01.png)
+Code and results for the revised PeerJ Computer Science manuscript
+"How do features act in an individual prediction? Separating standalone and interaction effects with a case-based taxonomy".
 
-An official Python implementation of **Localized Case-Based Feature Importance (CBFI)**, a model-agnostic explainable AI (XAI) framework designed to expose the latent interaction structures embedded within complex machine learning models. 
+## Library
+`local_cbfi_v2.py` — model-agnostic implementation.
 
-Instead of merely distributing numerical "payouts" like traditional additive frameworks (SHAP, LIME), Localized CBFI shifts the explainable AI paradigm from simple importance attribution to the **recovery of interaction-driven structures**.
+| function | returns |
+|---|---|
+| `decompose_feature(model, x, background, feature, task="regression"/"clf")` | standalone effect `G1`, interaction effect `G4`, in-context importance `Imp = G1 + G4`, mean `|d|` (`G4_abs`), case label (`label`, `label_conf`), per-sample case shares |
+| `decompose_instance(model, x, background, task)` | the above for every feature of `x` |
+| `pairwise_interaction(...)`, `interaction_matrix(...)` | pairwise interaction `G4_ij` (Eq. 8) |
+| `classify_effect(a, b, c, tau, kappa)` | instance-level label from per-sample effects |
 
----
-
-## 📝 Description
-
-Localized CBFI overcomes the structural limitations of existing additive explanation models by explicitly decomposing feature interactions at the individual instance level. Traditional methods often absorb complex, non-linear interactions into single feature scores, smoothing over the structural logic that governs the model's decision manifold. 
-
-This framework structurally isolates independent **Main Effects ($G_1$)** from pure, context-dependent **Synergistic Interactions ($G_4$)** at the individual instance level. It provides objective, high-resolution diagnostic maps of a model's internal decision mechanisms, making it vital for high-stakes domains where understanding the internal logic is as essential as predictive accuracy.
-
-![Important chart](images/Fig_02.png)
-
----
-
-## 📊 Dataset Information
-
-The experimental pipeline integrates public datasets characterized by distinct domain attributes and complex nonlinear relationships:
-
-1. **Wine Quality Dataset (Cortez et al., 2009)**: Consists of red wine samples with 11 chemical properties (acidity, residual sugar, alcohol, etc.). It is ideal for analyzing regulatory mechanisms ($G_4$) where final grades are determined by the delicate balance and interdependence between multiple components rather than single independent marginal variables.
-2. **Medical Insurance Dataset (Lantz, 2013)**: Predicts annual medical charges based on individual attributes (age, BMI, smoking status). It features a strong nonlinear dependency structure where the combination of specific risk factors creates exponential synergies.
-3. **Multi-domain Benchmarks**: Extensively validated across various high-stakes domains including finance, healthcare, and real estate (e.g., Ames Housing, Adult, Bike Sharing, and Diabetes datasets).
-
----
-
-## 💻 Code Information
-
-The core backend pipeline resides in `local_cbfi_clean_20260410.py` and provides a comprehensive explanation engine along with advanced visualization suites:
-
-* **Core Explanation Engines**: 
-  * `explain_local_cbfi_classification_conditional()`: Decomposes instance-level classification predictions into structural groups using conditional permutation sampling.
-  * `explain_local_cbfi_regression_conditional()`: Restores regression error-reduction trajectories by reflecting the structural decision tree logic.
-* **Neighborhood Estimators**: 
-  * `_get_conditional_samples()`: Extracts a localized neighborhood sample pool based on feature correlations and KNN to preserve the learned data manifold.
-* **Interaction Mapping**: 
-  * `get_local_pairwise_interaction()` & `generate_all_interactions()`: Evaluate structural interaction topologies across unique feature pairs.
-* **Visualization Tools**: Includes high-resolution plotting wrappers for bar attribution summaries (`visualize_feature_contribution`), 1:1 local dependencies (`visualize_local_pairwise_interaction`), and network structures (`visualize_feature_interaction_graph`, `visualize_draggable_interaction_graph`).
-
----
-
-## ⚙️ Requirements
-
-The entire framework and experimental pipelines are implemented using Python (v3.14+). Ensure the following dependencies are installed:
-
-```bash
-numpy >= 2.4.3
-pandas >= 2.0.0
-scikit-learn >= 1.8.0
-networkx >= 3.0
-matplotlib >= 3.10.8
-```
----
-
-## 🚀 Usage Instructions
-
-The library and experimental code for Localized CBFI are available at https://github.com/dkumango/Local_CBFI/. You can clone the repository and import the module directly:
-
-**Basic Structural Decomposition Table**
+Case labels: `inactive`, `standalone`, `amplified`, `redundant`, `gated`, `reversed`.
+Defaults: marginal sampler, `n_samples=100`, `tau_label=0.1` (fraction of sd of the output), `kappa=0.1`.
+The explained output is the prediction (regression) or the probability of the predicted class (classification); true labels are not used.
 
 ```python
-import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
-from local_cbfi_clean_20260410 import get_cbfi_table, generate_all_interactions
-
-# 1. Prepare your data and model
-X_train, y_train, background_data = ...
-model = RandomForestClassifier(random_state=42).fit(X_train, y_train)
-
-# 2. Select a target instance to explain
-instance = background_data.iloc[0]
-
-# 3. Generate Localized CBFI structural diagnostic table
-cbfi_table = get_cbfi_table(
-    model=model, 
-    instance=instance, 
-    background_data=background_data, 
-    n_samples=100, 
-    job_type='classification'
-)
-print(cbfi_table)'
+import local_cbfi_v2 as V2
+res = V2.decompose_instance(model, X_test.iloc[0], X_train.sample(1000), task="reg", n_samples=200)
+print(res[["G1", "G4", "Imp", "label", "label_conf"]])
 ```
 
-**Mapping Pairwise Structural Graphs**
+## Experiments (`revision_exp/`)
+| script | manuscript |
+|---|---|
+| `exp_synthetic.py` | RQ1: recovery of known interactions vs k-SII, TreeSHAP-IQ, H-statistic (Fig. 2–3, Tables 2–3) |
+| `exp_mechanism.py`, `exp_taxonomy.py` | RQ2: mechanism identification and label robustness (Fig. 4–5, Tables 4–5) |
+| `exp_richness.py`, `analyze_richness.py` | Partner-free Shapley baselines for the taxonomy (Fig. 4, Table 4) and information beyond the attribution score (Fig. 11, Table 13) |
+| `exp_stability.py`, `exp_scalability.py` | RQ3/RQ4: Monte Carlo variability, scalability, sampling sensitivity (Fig. 6, Tables 6, 8, 9) |
+| `exp_cases.py`, `exp_multidomain.py` | RQ5: case studies and multi-domain results (Fig. 7–10, Tables 7, 10–12) |
+| `exp_redundancy.py` | supplementary check of the redundant / gated / reversed split |
+| `make_figures.py` | regenerates all figures and tables from `results/` |
 
-```python
-# Generate interaction data for network graphs
-interaction_df = generate_all_interactions(
-    model=model, 
-    instance=instance, 
-    background_data=background_data, 
-    n_samples=100, 
-    job_type='classification'
-)
-```
----
-## 🔬 Methodology
+All result CSVs used in the paper are in `revision_exp/results/`.
+Models are scikit-learn pipelines (StandardScaler -> estimator) fitted on the training split only.
 
-Localized CBFI partitions instance-level feature contributions into distinct, mutually exclusive structural components:
-- **Main Effect ($G_1$):**
-  The independent drive of a feature, isolated from any variable coupling.
-  
-- **Interaction ($G_4$):**
-  The pure synergy or regulatory suppression that emerges only through the joint presence of multiple features.
-  
-  - $G_4 > 0$: Synergistic Interaction (cooperative feature reinforcement).
-   
-  - $G_4 < 0$: Regulatory/Suppressive Interaction (contextual attenuation).
+## Data
+Wine quality, medical insurance and bike sharing are included in `dataset/`. Download the others into `dataset/`:
+Adult (`adult.data.csv`, UCI), Bank Marketing (`bank.csv`, UCI), Diabetes Health Indicators
+(`diabetes_binary_5050split_health_indicators_BRFSS2015.csv`, Kaggle), Ames Housing (`AmesHousing.csv`).
+California Housing is fetched through scikit-learn.
 
-**Case-Based Sampling Strategy**
-To solve the combinatorial explosion problem common in game-theoretic approaches, Localized CBFI replaces exhaustive search with a case-based permutation sampling policy. By shuffling target features dynamically against background manifolds instead of using static references, it maintains linear scalability with respect to feature dimensions, achieving sub-second runtimes (<1.0s) per instance.
-
-**Latent Interaction Graph**
-By aggregating pairwise $G_4$ strength across instances, Localized CBFI explicitly maps out how predictive signals propagate through interconnected feature relationships, uncovering the hidden structural topology of black-box architectures.
-
----
-## 📜 Citations
-
-This work is currently under peer review for publication. Complete citation information and official DOI references for this paper will be provided here immediately upon acceptance and publication.
-
----
-## 📄 License & Contribution 
-
-GuidelinesLicenseThis project is licensed under the MIT License - see the LICENSE file for details.Contribution GuidelinesWe welcome contributions to optimize high-dimensional scalability and extend compatibility toward advanced tabular deep learning models.Fork the Repository at https://github.com/dkumango/Local_CBFI/.Create a feature branch (git checkout -b feature/AmazingFeature).Commit your changes and push to the branch.Open a Pull Request for code review.
+## Environment
+Python 3.10, see `requirements_server.txt` (scikit-learn 1.7.1, shap 0.49.1, shapiq 1.4.1, lime 0.2.0.1,
+xgboost 3.0.5, catboost 1.2.10, pytorch-tabnet 4.1.0). Experiments were run on 24 CPU cores with an RTX 3090.
